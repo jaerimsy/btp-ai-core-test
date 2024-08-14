@@ -41,12 +41,12 @@ spec:
     spec: |
       predictor:
         imagePullSecrets:
-        - name: <YOUR_DOCKER_SECRET>
+        - name: Hypgmlrud7!
         minReplicas: 1
         maxReplicas: 1
         containers:
         - name: kserve-container
-          image: docker.io/<YOUR_DOCKER_USER>/local-ai:ai-core
+          image: docker.io/jaerimsy/local-ai:ai-core
           ports:
             - containerPort: 18080
               protocol: TCP
